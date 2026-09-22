@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class userprofile {
     private String username;
     private String password;
@@ -46,20 +48,52 @@ public class userprofile {
         return this.password.equals(input);
     }
     public static void main(String[] args){
-        userprofile user=new userprofile("Giridhar","SecurePass1","giri@gmail.com");
-        System.out.println("Masked Password View:"+user.getPassword());
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Create user profile");
+        System.out.print("Enter username: ");
+        String username=sc.nextLine();
 
-        System.out.println("InValid Password");
-        user.setPassword("short1A");
-        user.setPassword("noLetter123");
-        user.setPassword("NoDigitsHere");
+        System.out.print("Enter Email: ");
+        String email=sc.nextLine();
 
-        System.out.println("Testing Valid Password");
-        user.setPassword("NewStrongPass9");
+        System.out.print("Enter initial password: ");
+        String initialpassword=sc.nextLine();
 
-        System.out.println("Testing Password Verified");
-        System.out.println("Verify 'WrongPass': "+user.verifyPassword("Wrong Pass"));
-        System.out.println("Verify 'NewStrongPass9': "+user.verifyPassword("New Strong Pass9"));
+        userprofile user =new userprofile(username,initialpassword,email);
+        System.out.println("prfile craeted ! Masked Pasword"+user.getPassword());
+
+        System.out.println(" Verified Password");
+        System.out.println("Enter password to verify: ");
+        String attempt=sc.nextLine();
+
+        if(user.verifyPassword(attempt)){
+            System.out.println("Verification result: Sucess");
+        }
+        else{
+            System.out.println("Verification Result: FAILED!");
+        }
+
+        System.out.println("Update Password");
+        boolean update= false;
+        while(!update){
+            System.out.println("Enter new password(min 8 char, 1 digit,1 uppercase)");
+            String newPassword=sc.nextLine();
+
+            if(!update){
+                System.out.println("PLease try again");
+            }
+        }
+        System.out.println("Verify New Password");
+        System.out.println("Enter new password to verify");
+        String verifyNew=sc.nextLine();
+
+        if(user.verifyPassword(verifyNew)){
+            System.out.println("Verification Result: Sucesss!");
+
+        }else{
+            System.out.println("Verificatin Result: Failed!");
+        }
+        sc.close();
     }
 
 }

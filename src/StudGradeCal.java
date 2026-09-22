@@ -3,7 +3,7 @@ public class StudGradeCal {
     private String name;
     private int[] marks;
 
-    public StudGradeCal(String nam,int[] marks){
+    public StudGradeCal(String name,int[] marks){
         this.name=name;
         this.marks=Arrays.copyOf(marks,marks.length);
     }

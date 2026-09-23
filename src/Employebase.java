@@ -1,15 +1,15 @@
 import java.util.*;
 public class Employebase {
     protected String name;
-    protected static int id;
+    protected int id;
 
     public Employebase(String name, int id){
         this.name=name;
         this.id=id;
     }
 
-    public double calculatePay() {
-        return 0;
+    public double calculatepay() {
+        return id;
     }
 
     public String getName(){
@@ -46,6 +46,7 @@ public class Employebase {
             }
         }
     }
+
     static class CommissionEmployee extends Employebase{
         private double sales;
         private double commissionRate;
@@ -65,14 +66,15 @@ public class Employebase {
     public static void  processPayroll(Employebase[] staff) {
         double totalPayout = 0;
         System.out.println(" PAYROLL SUMMARY");
-            for(Employebase emp:staff){
-                double pay=emp.calculatePay();
-                totalPayout+=pay;
-                System.out.println("ID"+emp.id+"name"+emp.getName()+"Pay"+pay);
-            }
-            System.out.println();
-            System.out.printf("Toatal payroll Cost",totalPayout);
+        for(Employebase emp:staff){
+            double pay=emp.calculatepay();
+            totalPayout+=pay;
+            System.out.println("ID: "+emp.id+", name: "+emp.getName()+", Pay: "+pay);
+        }
+        System.out.println();
+        System.out.println("Total payroll Cost"+totalPayout);
     }
+
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter number of employees to add:");
@@ -86,6 +88,8 @@ public class Employebase {
             System.out.print("Selection: ");
 
             int type=sc.nextInt();
+            System.out.println("Enter Id");
+            int id=sc.nextInt();
             System.out.println("Enter Name");
             String name=sc.next();
 
@@ -100,6 +104,7 @@ public class Employebase {
                     double hours=sc.nextDouble();
                     double rate=sc.nextDouble();
                     staff[i]= new HourlyEmployee(name, id, hours, rate);
+                    break;
                 case 3:
                     System.out.println("Enter Sales amount and Commission Rate");
                     double sales =sc.nextDouble();
@@ -109,6 +114,7 @@ public class Employebase {
                 default:
                     System.out.println("Invalid type,setting default salaried");
                     staff[i]=new SalariedEmployee(name,id,0);
+                    break;
             }
         }
         processPayroll(staff);

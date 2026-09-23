@@ -1,0 +1,231 @@
+**********DAY- 1 ************
+1. Simple Interest and Eligibility Calculator
+Create a Java class named `FinancialAnalyzer` using only primitive variables (`double` for principal and rate, `int` for years, and `boolean` for loyalty status). Implement the following methods:
+* `double calculateInterest(double principal, double rate, int years)`: Computes and returns the simple interest using the formula $(principal \times rate \times years) / 100$.
+* `double applyBonus(double interest, boolean isLoyal)`: Adds a flat $50.0$ bonus to the interest amount if the boolean parameter is true, then returns the final value.
+* `void displayMetrics(double finalAmount)`: Prints the numerical output directly to the console.
+
+
+*Requirements:* Write a `main` method to initialize your variables, invoke these methods sequentially, and pass the results between them without using any `String` objects or arrays.
+2. **Overloaded Geometry Area Calculator**
+Create a Java class named `AreaCalculator` that uses method overloading to compute geometric areas using different primitive datatypes (`int`, `double`, `float`). Implement three static methods sharing the name `calculateArea`:
+* `int calculateArea(int side)`: Computes the area of a square ($side \times side$).
+* `double calculateArea(double length, double width)`: Computes the area of a rectangle ($length \times width$).
+* `float calculateArea(float radius)`: Computes the area of a circle using $3.14159f \times radius \times radius$.
+
+**********DAY -2 ************
+1. **Even and Odd Counter**
+Create a Java class named `ArrayCounter` with a `main` method. Initialize an integer array with at least six numbers. Write a loop to traverse the array, count how many elements are even and how many are odd, and print both counts directly to the console.
+2. **Scalar Multiplication**
+Create a Java class named `ArrayScaler` with a `main` method. Declare and initialize an integer array of size 5 with custom values, and define a separate integer scalar variable (e.g., `3`). Write a loop that multiplies each element of the array by the scalar value, updates the array in place, and then print the modified elements.
+3. **Sorted Order Checker**
+Create a Java class named `SortChecker` with a `main` method. Initialize an integer array. Write a loop to check whether the elements in the array are arranged in strict ascending order. Print a boolean or text result indicating whether the array is sorted or not.
+4. **Second Largest Element Finder**
+Create a Java class named `SecondLargest` with a `main` method. Initialize an integer array with unsorted numbers. Write a logic using loops and variables to find and print the second largest number in the array without sorting the entire array first.
+
+*********Day-3 **************
+Task 1: Palindrome Checker (Easy)
+Write a program that reads a string from the user and checks whether it's a palindrome (reads the same forwards and backwards, ignoring case).
+Example: "Madam" → Palindrome, "Java" → Not a palindrome
+Concepts tested: charAt(), loop traversal, string comparison
+Task 2: Vowel & Word Counter (Easy-Medium)
+Write a program that counts:
+Total number of vowels in the string
+Number of words in the sentence (assume words are separated by single spaces)
+Example: "I love java" → Vowels: 5, Words: 3
+Concepts tested: iteration, charAt(), counting logic
+Task 3: Reverse Words in a Sentence (Medium)
+Given a sentence, reverse each word in place without reversing the whole sentence.
+Example: Input: "hello world java" → Output: "olleh dlrow avaj"
+Hint: Use split(" ") to break the sentence into words, reverse each word with a loop, and join them back.
+Concepts tested: split(), loops, string concatenation/StringBuilder
+Task 4: Character Frequency Finder (Hard)
+Write a program that finds the first non-repeating character in a string.
+Example: "programming" → First non-repeating character is p (since 'r', 'o', 'g', etc. repeat)
+Hint: Use two nested loops or an array of size 26 (for 'a'–'z') to count frequencies, then scan the string again.
+Concepts tested: array indexing with characters, two-pass logic, problem decomposition
+
+*************DAY- 4 ************
+Task 1: Create Your First Class with a Constructor (Easy)
+Create a class Student with:
+Fields: name (String), age (int), studentId (String)
+A parameterized constructor that initializes all three fields
+A display() method that prints the student details
+In main(), create 2–3 Student objects with different values and display them.
+Concepts tested: parameterized constructor, object creation, this keyword (introduce it here)
+
+Task 2: Default vs. Parameterized Constructor (Easy-Medium)
+Create a class Book with fields: title, author, and price.
+Write a no-arg (default) constructor that sets price = 0 and title/author to "Unknown"
+Write a parameterized constructor that accepts all three values
+Write a constructor that accepts only title and author, and sets price to 100 by default
+In main(), create three Book objects — one using each constructor — and display all details.
+Concepts tested: constructor overloading, default values, when Java provides a default constructor vs. when it doesn't
+
+Task 3: Constructor Chaining with this() (Medium)
+Create a class BankAccount with fields: accountNumber, accountHolder, balance.
+Write a constructor that takes all three fields
+Write a constructor that takes only accountNumber and accountHolder, and chains to the first constructor with an initial balance of 500 using this(...)
+Write a no-arg constructor that chains to the second with default values "SBI0000" and "Guest"
+In main(), create objects using each constructor and print the details.
+Concepts tested: this() call, reducing code duplication — emphasize that this() must be the first statement
+
+Task 4: Constructor + Validation Logic (Hard)
+Create a class Employee with fields: empId, name, salary.
+Write a parameterized constructor that validates the input:
+empId must start with "EMP" (e.g., "EMP101" is valid, "ABC101" is not)
+salary must be greater than 0
+If validation fails, print an error message and assign default values (empId = "EMP000", salary = 0, name = "Invalid")
+Use constructor chaining so the no-arg constructor reuses the same logic
+In main(), test with valid and invalid inputs.
+Concepts tested: real-world constructor usage, validation inside constructors, chaining combined with business logic — great bridge to the next OOP topics (methods + encapsulation)
+
+
+************Day -5***************
+
+Section A: Basics (10 marks)
+Q1. Write a program that reads a number n from the user and prints whether it is:
+A prime number or not (3 marks)
+A perfect number or not (sum of its divisors = the number itself, e.g., 6 = 1+2+3) (3 marks)
+
+Q2. Write a program that prints the Fibonacci series up to n terms using a loop. (4 marks)
+Example: n = 7 → 0 1 1 2 3 5 8
+Section B: Arrays (15 marks)
+
+Q3. Write a program that reads 10 integers into an array and:
+Finds the second largest element (4 marks)
+Counts the frequency of each element (e.g., {1, 2, 2, 3, 1} → 1 occurs 2 times, 2 occurs 2 times, 3 occurs 1 time) (6 marks)
+Prints all duplicate elements (5 marks)
+Section C: Strings (15 marks)
+
+Q4. Write a program that reads a sentence and:
+Counts the number of words and number of vowels (4 marks)
+Converts the sentence to Title Case (first letter of each word capitalized) — without using built-in methods like substring()/toUpperCase() for the whole string, but charAt() and Character methods are allowed (5 marks)
+Example: "hello world java" → "Hello World Java"
+
+Q5. Write a program to check if a string is a palindrome, ignoring case and spaces. (6 marks)
+Example: "A man a plan a canal Panama" → Palindrome
+Section D: Constructors (10 marks)
+
+Q6. Create a class Product with fields: productId (String), productName (String), price (double), quantity (int). Write:
+A no-arg constructor that sets defaults: "P000", "Unknown", 0.0, 0 (3 marks)
+A parameterized constructor for all fields (3 marks)
+A constructor that takes only productName and price, and chains to the parameterized constructor with "AUTO" as productId and quantity 1 using this(...) (4 marks)
+In main(), create one object using each constructor and display all details.
+
+ *************************Day-6 ************************
+
+Task 1: Bank Account with Getters/Setters (Easy)
+Create a class BankAccount with:
+Private fields: accountNumber (String), balance (double)
+Public getters and setters for both fields
+In the balance setter, reject negative values (print an error and don't update)
+In main(), create an account, set valid and invalid values, and print the results.
+Concepts tested: private keyword, getters/setters, basic validation
+
+Task 2: Read-Only and Write-Only Fields (Easy-Medium)
+Create a class Employee with:
+Private fields: empId, name, salary
+empId → read-only (getter only, set once via constructor)
+salary → write-only (setter only, with validation that salary > 0)
+name → both getter and setter
+In main(), demonstrate: you can read empId but not change it; you can change salary but cannot read it directly.
+Concepts tested: controlling access per field — this is the real point of encapsulation, not just "make everything private"
+
+Task 3: Student with Grade Calculation (Medium)
+Create a class Student with:
+Private fields: name, marks (array of 5 subjects)
+Constructor to set name and marks
+Public method getAverage() and getGrade() (A ≥ 90%, B ≥ 75%, C ≥ 60%, D ≥ 40%, F below)
+No setter for marks — marks can only be set via the constructor (immutable after creation)
+In main(), create 2–3 students and print their grade cards.
+Concepts tested: encapsulation + arrays together, hiding internal logic (grade rules) from the user of the class
+
+Task 4: Password-Style Validation Class (Hard)
+Create a class UserProfile with:
+Private fields: username, password, email
+The setPassword() method must enforce rules: minimum 8 characters, at least 1 digit, at least 1 uppercase letter — reject invalid passwords with a clear message
+The getPassword() method should return "********" instead of the real password
+Add a verifyPassword(String input) method that checks if the input matches the stored password
+In main(), demonstrate setting valid/invalid passwords and verifying.
+Concepts tested: real-world encapsulation, hiding sensitive data, validation logic inside the class
+🧬 Part 2: Inheritance (4 Tasks)
+
+Task 5: Basic Inheritance – Person → Student (Easy)
+Create a class Person with fields name and age, plus a displayInfo() method.
+Create a class Student that extends Person, adding studentId and course.
+Use super(name, age) in the Student constructor
+Override or extend displayInfo() to show student details too
+In main(), create a Student object and display its full info.
+Concepts tested: extends, super(), inherited members
+
+Task 6: Multilevel Inheritance – Vehicle → Car → ElectricCar (Easy-Medium)
+Create three classes:
+Vehicle → fields: brand, speed; method: display()
+Car extends Vehicle → adds fuelType
+ElectricCar extends Car → adds batteryCapacity and a method charge()
+Create an ElectricCar object and demonstrate that it can access members from all three levels.
+Concepts tested: multilevel inheritance, constructor chaining with super(), this() vs super()
+
+Task 7: Method Overriding + super.method() (Medium)
+Create a class Shape with a method area() that returns 0.
+Create Rectangle and Circle classes that extend Shape and override area() with the correct formulas (take dimensions via constructors).
+In main(), create an array of Shape references holding different shapes, loop through it, and print each area.
+Concepts tested: overriding, dynamic method dispatch (introduce polymorphism gently here — don't name it yet, let them experience it)
+⚠️ Common fresher mistake: they write new methods instead of overriding — insist the method signature stays identical
+
+Task 8: Superclass Constructor Challenge (Hard)
+Create a class Account with:
+Fields: accountNumber, balance
+A parameterized constructor that initializes both
+A method withdraw(double amount) that reduces balance if sufficient funds exist
+Create a class SavingsAccount that extends Account:
+Adds interestRate
+Its constructor must call super(accountNumber, balance)
+Override withdraw() to add a rule: minimum balance of 500 must remain after withdrawal — if not, print "Minimum balance required!" and don't deduct
+Use super.withdraw() where possible instead of duplicating code
+In main(), test withdrawals on both a normal logic and the SavingsAccount rule.
+Concepts tested: super() in constructors, super.method() in overridden methods, real-world business rules via inheritance
+
+******************DAY 7 ****************************
+
+Task 1: Method Overloading – Calculator (Easy)
+Create a class Calculator with multiple add() methods (overloading):
+add(int, int) → adds two integers
+add(double, double) → adds two doubles
+add(int, int, int) → adds three integers
+add(String, String) → concatenates two strings
+In main(), call all four versions and print the results.
+Concepts tested: compile-time polymorphism, method signatures must differ
+
+Task 2: Method Overriding + super – Employee Salaries (Easy-Medium)
+Create a class Employee with:
+Fields: name, baseSalary
+Method: calculateSalary() that returns baseSalary
+Create two subclasses:
+Manager → overrides calculateSalary() to add a 20% bonus (use super.calculateSalary() in the calculation)
+Developer → overrides calculateSalary() to add a 10% bonus plus a fixed 5000 allowance
+In main(), create objects of each type and print their salaries.
+Concepts tested: overriding rules, super.method(), why overriding ≠ overloading
+
+Task 3: Runtime Polymorphism – Shape Array Revisited (Medium)
+Extend your earlier Shape / Rectangle / Circle hierarchy:
+Add a new subclass Triangle with area() = ½ × base × height
+In main(), create an array of type Shape[] holding a mix of Rectangle, Circle, and Triangle objects
+Loop through the array and print each area
+Then add a line like: Shape s = new Rectangle(5, 4); and call s.area()
+Bonus question to ask the class: Can we do Rectangle r = new Shape();? Why does the compiler reject it?
+Concepts tested: upcasting, dynamic method dispatch, the parent reference holding child objects
+
+Task 4: Full Polymorphic Payroll System (Hard)
+Design a mini payroll system:
+Abstract-ish base class Employee (fields: name, id) with method calculatePay() — base version returns 0
+Subclasses:
+SalariedEmployee → fixed monthly salary
+HourlyEmployee → hoursWorked × hourlyRate (overtime hours beyond 40 paid at 1.5× rate)
+CommissionEmployee → sales × commissionRate
+In main():
+Create an Employee[] array with 4–5 mixed employee objects
+Loop and print each employee's name and pay — no instanceof, no casting, no if-else allowed
+Add a method processPayroll(Employee[] staff) that prints total payout
+Concepts tested: complete runtime polymorphism, clean design, why polymorphism eliminates conditional logic

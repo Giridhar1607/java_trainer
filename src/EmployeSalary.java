@@ -32,14 +32,16 @@ public class EmployeSalary {
 
         public static void main(String[] args){
             Scanner sc=new Scanner(System.in);
-            System.out.print("Enter employee Name and base salary");
+            System.out.print("Enter employee Name and base salary : ");
             EmployeSalary emp= new EmployeSalary(sc.next(),sc.nextDouble());
+            System.out.println("Enter Manager Name and salary: ");
             Manager mgr= new Manager(sc.next(),sc.nextDouble());
+            System.out.println("Enter Developer Name and Salary: ");
             developer dev= new developer(sc.next(),sc.nextDouble());
 
             System.out.println(emp.name+"Salary: "+emp.calculateSalary());
             System.out.println(mgr.name+"Salary: "+mgr.calculateSalary());
-            System.out.println(dev.name+"Salart: "+dev.calculateSalary());
+            System.out.println(dev.name+"Salary: "+dev.calculateSalary());
 
         }
 }

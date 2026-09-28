@@ -11,6 +11,14 @@ class Student{
     public void display(){
         System.out.println("ID: "+this.studentId+", Name: "+this.name+",Age: "+this.age);
     }
+
+    public boolean getTotal() {
+        return total;
+    }
+
+    public void setTotal(boolean total) {
+        this.total = total;
+    }
 }
 
 public class construFirst {

@@ -47,3 +47,16 @@
    2.Method Overriding + super – Employee Salaries (Easy-Medium) `EmployeSalary.java` <br>
    3.Runtime Polymorphism – Shape Array Revisited (Medium) `ShapePolyM.java`  <br>
    4.  Full Polymorphic Payroll System (Hard) `Employebase.java` <br>
+
+--> Day: 8 <br>
+   Task 1: Your First Abstract Class – Shape (Easy)  `ShapeAbs.java` <br>
+   Task 2: Abstract Class with Constructor & Instance Variables (Easy-Medium) `vehicleHiera.java` <br>
+   Task 3: Bank Account Hierarchy with Partial Abstraction (Medium) `BankAccount.java`   <br>
+
+--> Day: 9 <br>
+    Task 1: Build the Foundation — Student Data with Arrays and Strings (Basics + Arrays + Strings) `StudentData.java`  <br>
+    Task 2: Convert to OOP — The Student Class with Constructors (Constructors) `Student.java`  <br>
+    Task 3: Protect the Data — Encapsulation (Encapsulation) `Encapsulation.java`  <br>
+    Task 4: Grow the System — Inheritance + Polymorphism (Inheritance + Polymorphism) `Person.java`  <br>
+    Task 5: The Finishing Touch — Abstraction (Abstraction) `AbstractPerson.java` <br>
+

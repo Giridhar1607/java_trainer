@@ -60,3 +60,10 @@
     Task 4: Grow the System — Inheritance + Polymorphism (Inheritance + Polymorphism) `Person.java`  <br>
     Task 5: The Finishing Touch — Abstraction (Abstraction) `AbstractPerson.java` <br>
 
+--> Day 10 <br>
+    Task 1: Basic Interface Declaration and Implementation
+    Task 2: Interface Reference and Dynamic Behavior
+    Task 3: Implementing Multiple Interfaces
+    Task 4: Interface Constants, Default Methods, and Static Methods
+    Task 5: Interface Extending Another Interface and Resolving Default Method Conflicts
+    Task 6: Complete Design Problem – Payment System Using Interfaces

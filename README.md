@@ -61,9 +61,9 @@
     Task 5: The Finishing Touch — Abstraction (Abstraction) `AbstractPerson.java` <br>
 
 --> Day 10 <br>
-    Task 1: Basic Interface Declaration and Implementation `infacTask1.java` <br>
-    Task 2: Interface Reference and Dynamic Behavior `infacTask2.java` <br>
-    Task 3: Implementing Multiple Interfaces `infacTask3.java` <br>
-    Task 4: Interface Constants, Default Methods, and Static Methods `infacTask4.java` <br>
-    Task 5: Interface Extending Another Interface and Resolving Default Method Conflicts `infacTask5.java` <br>
-    Task 6: Complete Design Problem – Payment System Using Interfaces `infacTask6.java` <br>
+    Task 1: Basic Interface Declaration and Implementation `Task1Interface` <br>
+    Task 2: Interface Reference and Dynamic Behavior `Task2Interface` <br>
+    Task 3: Implementing Multiple Interfaces `Task3Interface` <br>
+    Task 4: Interface Constants, Default Methods, and Static Methods `Task4Interface` <br>
+    Task 5: Interface Extending Another Interface and Resolving Default Method Conflicts `Task5Interface` <br>
+    Task 6: Complete Design Problem – Payment System Using Interfaces `Task6Interface` <br>

@@ -1,8 +1,7 @@
 # Daily_java
 ### QUESTIONS `Question.txt`
  --> Task: 1 <br>
-    1. Simple Interest and Eligibility Calculator
-    `FinancialAnalyzer.java`  <br>
+    1. Simple Interest and Eligibility Calculator  `FinancialAnalyzer.java`  <br>
     2. Overloaded Geometry Area Calculator 
     `AreaCalculatr.java`<br>
 
@@ -49,23 +48,34 @@
    4.  Full Polymorphic Payroll System (Hard) `Employebase.java` <br>
 
 --> Task: 8 <br>
-   Task 1: Your First Abstract Class – Shape (Easy)  `ShapeAbs.java` <br>
-   Task 2: Abstract Class with Constructor & Instance Variables (Easy-Medium) `vehicleHiera.java` <br>
-   Task 3: Bank Account Hierarchy with Partial Abstraction (Medium) `BankAccount.java`   <br>
+   1: Your First Abstract Class – Shape (Easy)  `ShapeAbs.java` <br>
+   2: Abstract Class with Constructor & Instance Variables (Easy-Medium) `vehicleHiera.java` <br>
+   3: Bank Account Hierarchy with Partial Abstraction (Medium) `BankAccount.java`   <br>
 
 --> Task: 9 <br>
-    Task 1: Build the Foundation — Student Data with Arrays and Strings (Basics + Arrays + Strings) `StudentData.java`  <br>
-    Task 2: Convert to OOP — The Student Class with Constructors (Constructors) `Student.java`  <br>
-    Task 3: Protect the Data — Encapsulation (Encapsulation) `Encapsulation.java`  <br>
-    Task 4: Grow the System — Inheritance + Polymorphism (Inheritance + Polymorphism) `Person.java`  <br>
-    Task 5: The Finishing Touch — Abstraction (Abstraction) `AbstractPerson.java` <br>
+    1: Build the Foundation — Student Data with Arrays and Strings (Basics + Arrays + Strings) `StudentData.java`  <br>
+    2: Convert to OOP — The Student Class with Constructors (Constructors) `Student.java`  <br>
+    3: Protect the Data — Encapsulation (Encapsulation) `Encapsulation.java`  <br>
+    4: Grow the System — Inheritance + Polymorphism (Inheritance + Polymorphism) `Person.java`  <br>
+    5: The Finishing Touch — Abstraction (Abstraction) `AbstractPerson.java` <br>
 
 --> Task: 10 <br>
-    Task 1: Basic Interface Declaration and Implementation `Task1Interface` <br>
-    Task 2: Interface Reference and Dynamic Behavior `Task2Interface` <br>
-    Task 3: Implementing Multiple Interfaces `Task3Interface` <br>
-    Task 4: Interface Constants, Default Methods, and Static Methods `Task4Interface` <br>
-    Task 5: Interface Extending Another Interface and Resolving Default Method Conflicts `Task5Interface` <br>
-    Task 6: Complete Design Problem – Payment System Using Interfaces `Task6Interface` <br>
+    1: Basic Interface Declaration and Implementation `Task1Interface` <br>
+    2: Interface Reference and Dynamic Behavior `Task2Interface` <br>
+    3: Implementing Multiple Interfaces `Task3Interface` <br>
+    4: Interface Constants, Default Methods, and Static Methods `Task4Interface` <br>
+    5: Interface Extending Another Interface and Resolving Default Method Conflicts `Task5Interface` <br>
+    6: Complete Design Problem – Payment System Using Interfaces `Task6Interface` <br>
 
---> Task :11 E-Commerce Order Management System  <br>
+--> Task : 11 E-Commerce Order Management System  <br>
+    Part A – Products (Abstraction + Encapsulation)
+    Part B – People (Inheritance + Polymorphism)
+    Part C – Payments (Interfaces)
+    Part D – Orders + Main Application
+
+-->  Task : 12 
+    1: Basic try-catch — Safe Division and Array Access
+    2: Multiple catch Blocks and finally — Banking Withdrawal
+    3: Custom Exception — Student Marks Validation
+    4: The Complete Login System — Everything Combined
+    

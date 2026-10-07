@@ -74,8 +74,18 @@
     Part D – Orders + Main Application <br>
 
 -->  Task : 12  <br>
-    1: Basic try-catch — Safe Division and Array Access  <br>
-    2: Multiple catch Blocks and finally — Banking Withdrawal  <br>
-    3: Custom Exception — Student Marks Validation  <br>
-    4: The Complete Login System — Everything Combined  <br>
+    1: Basic try-catch — Safe Division and Array Access `SafeDivision.java` <br>
+    2: Multiple catch Blocks and finally — Banking Withdrawal  `BankingFinally.java` <br>
+    3: Custom Exception — Student Marks Validation `CustomException.java`  <br>
+    4: The Complete Login System — Everything Combined  `LoginSystem.java` <br>
+    
+-->  Task : 13  <br>
+    1: Two Threads, Two Messages (Your First Threads) `TwoThread.java`  <br>
+    2: The Race — start() vs run() and Thread.sleep()  `StartVsRun.java` <br>
+    3: Thread Names and Joining — Waiting for a Friend `JoinDemo.java` <br>
+    4: The Bank Account Problem — Why We Need Synchronization (Two Parts)   <br>
+    5: Producer–Consumer with a Simple Ticket Counter   <br>
+
+
+
     

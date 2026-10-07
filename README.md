@@ -50,7 +50,7 @@
 --> Task: 8 <br>
    1: Your First Abstract Class – Shape (Easy)  `ShapeAbs.java` <br>
    2: Abstract Class with Constructor & Instance Variables (Easy-Medium) `vehicleHiera.java` <br>
-   3: Bank Account Hierarchy with Partial Abstraction (Medium) `BankAccount.java`   <br>
+   3: Bank Account Hierarchy with Partial Abstraction (Medium) `BankApp.java`   <br>
 
 --> Task: 9 <br>
     1: Build the Foundation — Student Data with Arrays and Strings (Basics + Arrays + Strings) `StudentData.java`  <br>

@@ -68,10 +68,10 @@
     6: Complete Design Problem – Payment System Using Interfaces `Task6Interface` <br>
 
 --> Task : 11 E-Commerce Order Management System  <br>
-    Part A – Products (Abstraction + Encapsulation) <br>
-    Part B – People (Inheritance + Polymorphism) <br>
-    Part C – Payments (Interfaces) <br>
-    Part D – Orders + Main Application <br>
+    Part A – Products (Abstraction + Encapsulation) `product.java,ElectronicProduct.java, ClothingProduct.java, GrosaryProduct.java` <br>
+    Part B – People (Inheritance + Polymorphism) ` user.java , Customer.java, Admin.java ` <br>
+    Part C – Payments (Interfaces) ` PaymentMethod.java, Discountable.java, CreditCardPayment.java, UpiPayment.java, WalletPayment.java, NetBanking.java ` <br>
+    Part D – Orders + Main Application ` Order.java, Main.java ` <br>
 
 -->  Task : 12  <br>
     1: Basic try-catch — Safe Division and Array Access `SafeDivision.java` <br>

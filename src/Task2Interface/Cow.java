@@ -1,9 +1,0 @@
-package Task2Interface;
-
-public class Cow implements Animal {
-
-    @Override
-    public void makeSound() {
-        System.out.println("Cow says: Moo!");
-    }
-}
